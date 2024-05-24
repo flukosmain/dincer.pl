@@ -6,18 +6,23 @@ const Loader = () => {
   const [country, setCountry] = useState("");
 
   useEffect(() => {
-    const fetchIpAndLocation = async () => {
+    // Fetch the IP address
+    const fetchIp = async () => {
       try {
-        const response = await fetch("http://ip-api.com/json/");
+        const response = await fetch("https://api.ipify.org?format=json");
         const data = await response.json();
-        setIp(data.query); 
-        setCountry(data.country); 
+        setIp(data.ip);
+        
+        // Fetch full country name based on IP
+        const countryResponse = await fetch(`https://ipapi.co/${data.ip}/country_name/`);
+        const countryData = await countryResponse.text();
+        setCountry(countryData);
       } catch (error) {
-        console.error("Error fetching the IP address or location:", error);
+        console.error("Error fetching IP and country:", error);
       }
     };
 
-    fetchIpAndLocation();
+    fetchIp();
   }, []);
 
   const strings = [
