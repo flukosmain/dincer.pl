@@ -21,8 +21,8 @@ const Loader = () => {
   }, []);
 
   const strings = [
-    `Welcome to my website, <span style="color: red;">${ip}</span> :)`,
-    `Nice to meet someone from <span style="color: red;">${country}</span>`
+    `Welcome to my website, <span style="color: red;">${ip}</span> `,
+    `Nice to meet someone from <span style="color: red;">${country}</span> :)`
   ];
 
   return (
