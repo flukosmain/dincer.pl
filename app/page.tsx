@@ -2,13 +2,27 @@
 import Sidebar from "./components/sidebar";
 import Profile from "./components/profile";
 import Section2 from "./components/section2";
-import { useState } from "react";
+import { useEffect, useState } from "react";
 import Work from './components/work'
 import Link from "next/link";
-
+import Loader from "./components/Loader";
 export default function Home() {
   const [knowMore, setKnowMore] = useState(false)
+  const [isLoading, setIsLoading] = useState(true);
+  useEffect(() => {
+    const fakeDataFetch = () => {
+      setTimeout(() => {
+        setIsLoading(false);
+      }, 13000);
+    };
+
+    fakeDataFetch();
+  }, []);
   return (
+
+    isLoading ? (
+      <Loader />
+    ) : (
     <div className="container">
       
       <div className="w-full h-full top-0 text-white z-20">
@@ -33,6 +47,6 @@ export default function Home() {
           <Link href='#profile' onClick={()=> setKnowMore(false)} className={`${knowMore ? 'cursor-pointer blog_button mt-10 md:mt-0' : 'hidden'}`}>Let{"'"}s get back</Link>
         </section>
     </div>
-  );
+  ));
 }
 
