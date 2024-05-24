@@ -1,0 +1,56 @@
+{
+  "heading" : "Skills",
+  "data" : [
+    {
+      "name": "TypeScript",
+      "image": "/assets/typescript.png",
+      "height": 35,
+      "width": 35,
+      "alt": "typescript"
+    },
+    {
+      "name": "React",
+      "image": "/assets/react.png",
+      "height": 35,
+      "width": 35,
+      "alt": "react"
+    },
+    {
+      "name": "Next.js",
+      "image": "/assets/nextjs.png",
+      "height": 35,
+      "width": 35,
+      "alt": "next.js"
+    },
+    {
+      "name": "MySQL",
+      "image": "/assets/mysql.png",
+      "height": 35,
+      "width": 35,
+      "alt": "MySQL"
+    },
+    {
+      "name": "Nodejs",
+      "image": "/assets/nodejs.png",
+      "height": 35,
+      "width": 35,
+      "alt": "Node.js"
+    },
+    {
+      "name": "Python",
+      "image": "/assets/Python.png",
+      "height": 35,
+      "width": 35,
+      "alt": "Python"
+    },
+    {
+      "name": "JavaScript",
+      "image": "/assets/javascript.png",
+      "height": 35,
+      "width": 35,
+      "alt": "JavaScript"
+    }
+
+  ]
+}
+  

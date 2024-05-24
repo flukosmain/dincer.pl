@@ -1,0 +1,27 @@
+{
+    "heading":"Projects",
+    "data" : [
+        {
+            "name" : "dincer.pl (BOT Discord)",
+            "videoUrl" : ".",
+            "githubUrl" : ".",
+            "description" : [
+                "dincer.pl - BOT Discord z funkcjami takimi jak ekonomia, komendy moderacyjne, system ticketów oraz wiele więcej. Wszystkie funkcje można zobaczyć na serwerze Discord, który jest podany poniżej. Bota napisałem w Pythonie, używając biblioteki Nextcord. Jako główną bazę danych wybrałem SQLite3."
+            ],
+            "alt" : "project",
+            "id" : "1",
+            "deployedUrl" : "https://discord.gg/47vzH7cjvt"
+        },
+        {
+            "name" : "dincer.pl (Strona internetowa)",
+            "videoUrl" : ".",
+            "githubUrl" : ".",
+            "description" : [
+                "dincer.pl - Strona internetowa, która powstała jako moje portfolio. Do jej stworzenia użyłem frameworka Next.js wraz z TypeScript. Strona posiada system logowania oraz funkcję sprawdzania IP. Do implementacji systemu logowania wykorzystałem bazę danych MySQL. W celu stylizacji użyłem Tailwind CSS."
+            ],
+            "alt" : "project",
+            "id" : "1",
+            "deployedUrl" : "https://discord.gg/47vzH7cjvt"
+        }
+    ]
+}

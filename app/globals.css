@@ -1,0 +1,539 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@font-face {
+  font-family: 'minecraft';
+  src: url('../public/assets/Minecraftia.woff') format('woff'),
+       url('../public/assets/Minecraftia.woff2') format('woff2');
+  font-weight: normal;
+  font-style: normal;
+}
+
+:root {
+  --themeColor : #ff0000;
+  --hoverColor: #ff0000;
+  --boxShadow : #500000;
+  --hoverBoxShadow : #50000000;
+  --themeColor2 : white;
+  --themeTextColor : white;
+  --themeTextColor2 : black;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  scroll-behavior: smooth;
+}
+
+body {
+  background: black;
+}
+
+
+
+.container {
+  position: relative; 
+  max-width: 100%;
+  margin: 0 auto;
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  overflow-y: scroll;
+  scroll-snap-type: y mandatory;
+  scrollbar-width: thin; /* Firefox */
+  scrollbar-color: rgb(0,0,0,0) transparent; /* Firefox */
+  &::-webkit-scrollbar {
+    height: 4px;
+  }
+  -ms-overflow-style: none; /* IE 10+ */
+  &::-webkit-scrollbar {
+    width: 0px; /* Width of scrollbar */
+  }
+  &::-webkit-scrollbar-track {
+    background-color: transparent; /* Track color */
+  }
+  &::-webkit-scrollbar-thumb {
+    background-color: var(--themeTextColor); /* Thumb color */
+    border-radius: 8px; /* Rounded corners */
+  }
+}
+
+
+
+.section3 {
+  background-color: #212121;
+}
+
+.wyzy {
+  z-index: 9999;
+}
+
+.display {
+  display: none;
+}
+
+.wyz {
+  margin: 0;
+  padding: 0;
+  
+}
+
+.section {
+  position: relative;
+  width: 100vw;
+  height: 99vh;
+  overflow: hidden ;
+  background: #020000;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+
+
+.section h2 {
+  color: transparent;
+  font-weight: 900;
+  font-size: 14em;
+  -webkit-text-stroke: 2px #fff;
+  text-transform: uppercase;
+}
+.section .star {
+  position: absolute;
+  top:0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  pointer-events: none;
+  animation: animate 8s ease-in-out infinite, backgroundmove 16s linear infinite;
+}
+
+.wave {
+  width: 100.6%;
+  padding: 0 !important;
+  margin: 0 !important;
+}
+
+.okee:hover {
+  transform: scale(1.2rem);
+}
+
+
+
+@keyframes animate {
+  0%,20%,40%,60%,80%,100% {
+    opacity:0;
+  }
+  10%,30%,50%,70%,90% {
+    opacity: 1;
+  }
+}
+
+@keyframes backgroundmove {
+  0% {
+    transform: scale(1);
+  }
+  100% {
+    transform: scale(2);
+  }
+}
+
+.blog_button {
+  background-color: var(--themeColor);
+  color: var(--themeTextColor2);
+  font-family: 'minecraft';
+  padding: 5px 30px 5px 30px;
+  box-shadow: -5px 5px 0px 0px var(--boxShadow);
+  font-size: larger;
+  border-radius: 2px;
+  right: 40px;
+  height: 50px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  transition: transform 0.3s, color 0.3s, background-color 0.3s; 
+}
+.blog_button:hover {
+      transform: scale(1.01);
+      color: var(--themeTextColor2);
+      background-color : var(--hoverColor);
+      box-shadow: -5px 5px 0px 0px var(--hoverBoxShadow);
+}
+
+.heading, .quote {
+  display: flex;
+  color: var(--themeTextColor);
+  font-family: minecraft;
+  align-items: center;
+  justify-content: center;
+}
+
+.font {
+  font-family: minecraft;
+}
+
+.content {
+  color:rgba(240, 248, 255);
+  font-family: monospace;
+}
+
+.border_style {
+  border-style: dashed;
+  border-width: thick;
+  border-color: var(--themeTextColor);
+  border-radius: 2px;
+}
+
+.highlight {
+    font-weight: bolder;
+    color: var(--themeColor);
+}
+
+.quote_bar {
+  font-family: monospace;
+  font-size: 80px;
+  color: var(--themeColor);
+  padding: 0px 20px;
+}
+
+.tooltip_container {
+  position: relative;
+  display: inline-block;
+}
+.tooltip_container span {
+  visibility: hidden;
+  opacity: 0;
+  color: var(--themeTextColor);
+  font-family: monospace;
+  background-color: transparent;
+}
+
+.image:hover::after {
+  content: attr(data-tooltip);
+}
+
+.icon_container {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+  gap:10px;
+  border: white;
+  height: 8vh;
+  border-width: thin;
+  border-style: groove;
+  border-radius: 2px;
+  padding: 5px 15px 5px 15px;
+}
+
+.scrollbar {
+  padding: 20px 0px;
+  scrollbar-width: thin; /* Firefox */
+  scrollbar-color: var(--themeTextColor) transparent; /* Firefox */
+  &::-webkit-scrollbar {
+    height: 4px;
+  }
+  -ms-overflow-style: none; /* IE 10+ */
+  &::-webkit-scrollbar {
+    width: 1px; /* Width of scrollbar */
+  }
+  &::-webkit-scrollbar-track {
+    background-color: transparent; /* Track color */
+  }
+  &::-webkit-scrollbar-thumb {
+    background-color: var(--themeTextColor); /* Thumb color */
+    border-radius: 8px; /* Rounded corners */
+  }
+}
+.project_card {
+  min-width: 224px;
+  padding: 10px;
+  min-height: 250px;
+  padding-bottom: 20px;
+  border-style: dashed;
+  border-width: medium;
+  border-color:var(--themeTextColor);
+  border-radius: 2px;
+  color:var(--themeTextColor);
+}
+
+.links {
+  display: flex;
+  align-items: center;
+  flex-direction: row;
+  justify-content: space-around;
+  width:90%;
+  flex-wrap: wrap;
+  padding: 0px 10px;
+  gap:10px;
+  font-family: monospace;
+  font-weight: bold;
+}
+
+.link {
+  /* padding: 5px  10px; */
+  font-size: x-large;
+}
+
+hr {
+  border-style: dashed;
+}
+
+.filter-bar {
+  display: flex;
+  flex-wrap: wrap;
+  gap:20px;
+  align-items: center;
+  padding: 10px 0px 20px 0px;
+  justify-content: center;
+}
+
+.filter-bar button {
+  background-color: var(--themeTextColor);
+  padding: 5px 15px;
+  border-radius: 2px;
+  font-family: monospace;
+  font-weight: bold;
+  font-size: larger;
+}
+.filter-bar button.active {
+  background-color: var(--themeColor);
+}
+.experience_container {
+  display: grid;
+  grid-template-columns: repeat(2,1fr);
+  gap:20px;
+  row-gap: 20px;
+  background-color: inherit;
+  padding: 0 20px;
+  border-radius: 2px;
+  height: 70vh;
+  background-color: #ff000000;
+  overflow-y: scroll;
+  scrollbar-width: thin; /* Firefox */
+  scrollbar-color: var(--themeTextColor) transparent; /* Firefox */
+  &::-webkit-scrollbar {
+    height: 4px;
+  }
+  -ms-overflow-style: none; /* IE 10+ */
+  &::-webkit-scrollbar {
+    width: 4px; /* Width of scrollbar */
+  }
+  &::-webkit-scrollbar-track {
+    background-color: transparent; /* Track color */
+  }
+  &::-webkit-scrollbar-thumb {
+    background-color: var(--themeTextColor); /* Thumb color */
+    border-radius: 8px; /* Rounded corners */
+  }
+}
+
+
+.experience_content {
+  gap:20px;
+  width: 100%;
+  border-style: dashed;
+  border-width:medium;
+  border-color: var(--themeTextColor);
+  background-color: #ff000000;
+  border-radius: 2px;
+  padding: 20px; 
+  overflow-y: scroll;
+  scrollbar-width: thin; 
+  scrollbar-color: rgb(0,0,0,0) transparent; 
+  &::-webkit-scrollbar {
+    height: 4px;
+  }
+  -ms-overflow-style: none;
+  &::-webkit-scrollbar {
+    width: 0px; 
+  }
+  &::-webkit-scrollbar-track {
+    background-color: transparent; 
+  }
+  &::-webkit-scrollbar-thumb {
+    background-color: var(--themeTextColor); 
+    border-radius: 8px; /* Rounded corners */
+  }
+}
+
+.experience_content::-webkit-content {
+  display: none;
+}
+
+.title_box {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.experience_name {
+  color: var(--themeColor);
+  font-family: 'minecraft';
+  font-size: large;
+}
+
+.role {
+  color: var(--themeTextColor);
+  font-family: monospace;
+  font-size: large;
+  padding: 5px 0px;
+  font-style: italic;
+  font-weight: bolder;
+}
+
+.work_skill {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  color: black;
+  gap:10px;
+  padding: 10px 0px 20px 0px;
+}
+.work_skill_name {
+  background-color: rgba(255, 255, 255, 0.912);
+  padding: 5px 10px;
+  border-radius: 2px;
+  font-family: monospace;
+  font-weight: bold;
+}
+
+.work_description {
+  color: var(--themeTextColor);
+  font-family : monospace;
+  font-size: large;
+  font-weight: lighter;
+}
+
+ul {
+  list-style-type: square;
+  padding: 0px 10px;
+}
+
+.duration {
+  font-family: monospace;
+  color: var(--themeTextColor);
+}
+
+.car_section {
+  width: 70%;
+  padding: 20px 100px 40px 100px;
+  overflow: hidden;
+}
+
+@media only screen and (max-width: 1080px) and (min-width:600px) {
+  .border_style {
+    border-style: none;
+  }
+
+  .blog_button {
+    top:100px;
+  }
+  .container {
+    padding: 0;
+    scroll-snap-type: none;
+    scroll-behavior: smooth;
+  }
+  * {
+    scroll-snap-align: none;
+  }
+  section {
+    scroll-snap-align: none;
+    height: auto;
+  }
+  .section {
+    height: max-content;
+  }
+  .experience_container {
+    grid-template-columns: repeat(2,1fr);
+    height: 60vh;
+    width: 100%;
+    padding: 20px 0px 0px 0px;
+  }
+  .experience_content {
+    height: max-content;
+  }
+  .profile_container {
+    padding:3rem 0;
+  }
+  .section, .car_section {
+    padding: 20px 100px;
+    background-color: rgba(0,0,0,0);
+  }
+  .car_section {
+    width: 100%;
+  }
+  .title_box {
+    flex-direction: column;
+    justify-content: none;
+    align-items: normal;
+  }
+}
+
+@media only screen and (max-width:900px) {
+  .experience_container {
+    grid-template-columns: repeat(1,1fr);
+    height: 100%;
+    padding: 20px 0px 0px 0px;
+  }
+}
+
+@media only screen and (max-width: 600px) {
+  .border_style {
+  border-style: none;
+  }
+  .container {
+    padding: 0;
+    scroll-snap-type: none;
+    scroll-behavior: smooth;
+  }
+  .section {
+    height: max-content;
+  }
+  .section, .car_section{
+    background-color: rgba(0,0,0,0);
+  }
+  .car_section {
+    padding: 0 50px;
+    width: 100%;
+  }
+  * {
+    scroll-snap-align: none;
+  }
+  section {
+    scroll-snap-align: none;
+    height: auto;
+  }
+  .heading {
+    font-size: xx-large;
+  }
+  .quote {
+    font-size: larger;
+  }
+  .content {
+    font-size: large;
+  }
+  .profile_container {
+    padding:2rem 0;
+  }
+  .project_card {
+    min-width: 100%;
+  }
+  .experience_container {
+    grid-template-columns: repeat(1,1fr);
+    height: 80vh;
+    overflow: scroll;
+    padding: 0px 0px 0px 0px;
+  }
+  .experience_content {
+    height: max-content;
+  }
+  .title_box {
+    flex-direction: column;
+    justify-content: none;
+    align-items: normal;
+  }
+}
+

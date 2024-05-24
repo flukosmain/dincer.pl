@@ -1,0 +1,27 @@
+{
+    "greeting": "Witaj na mojej stronie!",
+    "profileImage": {
+      "src": "/assets/profile.png",
+      "height": 300,
+      "width": 300,
+      "alt": "profile image"
+    },
+    "description": {
+      "content": "Nazywam sie <highlight>Olivier</highlight>, jestem początkującym <highlight>Front-END Developer'em</highlight>.",
+      "bulletedContent": [
+        {
+          "url": "https://forum.graphadvocates.com/",
+          "bullet": "🤖 tworzeniem <highlight>Botów discord</highlight>."
+        },
+        {
+          "url": "",
+          "bullet": "🌐  tworzeniem <highlight>Stron internetowych</highlight>."
+        },
+        {
+          "url": "",
+          "bullet": "🔎 Zabezpieczaniem <highlight>serwerów</highlight>."
+        }
+      ]
+    }
+  }
+  

@@ -1,0 +1,102 @@
+{
+  "heading":"Moje doswiadczenie",
+    "data" : [
+        {
+            "organization" : "starify.tech",
+            "duration" : "2023 - 2023",
+            "skills" : [
+                "Python",
+                "Next.js"
+            ],
+            "role":"BOT Developer, WEB Developer",
+            "description" : [
+                {
+                    "url":"",
+                    "bullet":"Na serwerze <highlight>starify</highlight> zajmowałem się tworzeniem stron internetowych oraz botów Discord dla klientów. Moje projekty obejmowały kompleksowe rozwiązania, dostosowane do indywidualnych potrzeb użytkowników, zapewniając zarówno funkcjonalność, jak i estetykę."
+                }
+            ],
+            "type" : ["Code"]
+        },
+        {
+            "organization" : "K-Code",
+            "duration" : "2023 - 2023",
+            "skills" : [
+                "Python"
+            ],
+            "role":"Python developer",
+            "description" : [
+                {
+                    "url":"",
+                    "bullet":"Na serwerze <highlight>K-Code</highlight> specjalizowałem się w tworzeniu botów Discord dla klientów. K-Code nauczyło mnie używac MySQL."
+                }
+            ],
+            "type" : ["Code"]
+        },
+        {
+            "organization" : "helldev.pl",
+            "duration" : "2023 - 2023",
+            "skills" : [
+                "Python",
+                "JavaScript",
+                "Next.js"
+            ],
+            "role":"WEB Developer, BOT Developer",
+            "description" : [
+                {
+                    "url":"",
+                    "bullet":"Na serwerze <highlight>helldev.pl</highlight> zajmowałem się tworzeniem botów Discord oraz stron internetowych dla klientów. Dodatkowo, projektowałem i implementowałem szablony stron na strefę premium."
+                }
+            ],
+            "type" : ["Code"]
+        },
+        {
+            "organization" : "gildia JAJO",
+            "duration" : "2023 - 2023",
+            "skills" : [
+                "Python"
+            ],
+            "role":"BOT Developer",
+            "description" : [
+                {
+                    "url":"",
+                    "bullet":"BOT Discord dla <highlight>gildii JAJO</highlight> to jeden z najlepszych, jakie napisałem. Zautomatyzował proces rekrutacji dzięki zaawansowanemu systemowi ticketów i logów. Bot oferował takie funkcje jak: system weryfikacji (captcha), propozycje, ankiety oraz konkursy. Dodatkowo, posiadał mechanizmy blokujące raidy i nadmierne spamowanie."
+                }
+            ],
+            "type" : ["Minecraft"]
+        },
+        {
+            "organization" : "GalaxyNetwork.pl",
+            "duration" : "2023 - 2023",
+            "skills" : [
+                "Python",
+                "RCON",
+                "SQLite3"
+            ],
+            "role":"BOT Developer",
+            "description" : [
+                {
+                    "url":"",
+                    "bullet":"Na serwerze tworzyłem autorskiego bota na zamówienie. BOT Discord dla serwera Minecraft <highlight>GalaxyNetwork.pl</highlight> zarządzał mechanizmem nagród, weryfikował nicki użytkowników za pomocą kodów i zapisywał dane w bazie, aby zapobiec wielokrotnemu odbieraniu nagród. Projekt ten nauczył mnie poprawnie używać i zabezpieczać połączenie RCON."
+                }
+            ],
+            "type" : ["Minecraft"]
+        },
+        {
+            "organization" : "TreeMC.pl",
+            "duration" : "2024 - 2024",
+            "skills" : [
+                "Python",
+                "RCON",
+                "SQLite3"
+            ],
+            "role":"BOT Developer",
+            "description" : [
+                {
+                    "url":"",
+                    "bullet":"BOT dla serwera <highlight>TreeMC.pl</highlight> to zaawansowany, autorski bot Discord dla serwera Minecraft. Oferował systemy weryfikacji, konkursów, propozycji, ankiet, oraz mechanizmy przeciw raidowaniu i spamowaniu. Zarządzał lobby z liczbą zaproszeń oraz miał zabezpieczony system nagród. Dodatkowo, posiadał centrum pomocy zabezpieczone logami."
+                }
+            ],
+            "type" : ["Minecraft"]
+        }
+    ]
+}
